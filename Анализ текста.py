@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import pymorphy2
-#import dawg_python
-#import nltk
 from many_stop_words import get_stop_words as stw
 import openpyxl as op
 liness=[]
