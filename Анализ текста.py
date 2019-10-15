@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import pymorphy2
+#import dawg_python
+#import nltk
 from many_stop_words import get_stop_words as stw
 import openpyxl as op
 liness=[]
@@ -10,7 +12,9 @@ line=''
 i=0
 punct=['.',',','«','»','"','!','?','—',':','(',')'] # знаки пунктуации
 line1=''
-with open('text.txt', 'r') as text:
+print('Укажите путь')
+path=input()
+with open(path, 'r') as text:
     lines=text.readlines()
 for a in lines:
     if a!='\n':
